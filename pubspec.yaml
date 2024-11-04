@@ -1,0 +1,22 @@
+name: flutter_biometric_auth
+description: A Flutter plugin for biometric authentication.
+
+publish_to: 'none' # Remove this line if you want to publish the plugin
+
+version: 0.0.1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Add any other dependencies required for your plugin
+  plugin_platform_interface: ^2.0.0  # Bu örnek için, versiyonu kontrol edin
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.fluttersecurebiometrics.flutter_biometric_auth  # Doğru Android paketi
+        pluginClass: FlutterBiometricAuthPlugin  # Ana sınıf adınız
